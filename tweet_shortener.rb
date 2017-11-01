@@ -41,6 +41,7 @@ def selective_tweet_shortener(tweet_array)
   end
 end
 
+=begin
 def shortened_tweet_truncator
   tweet_array.each do |tweet|
     word_substituter(tweet)
@@ -51,3 +52,4 @@ def shortened_tweet_truncator
     end
   end
 end
+=end
