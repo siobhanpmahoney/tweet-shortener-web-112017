@@ -16,7 +16,7 @@ def word_substituter(tweet)
   tweet = tweet.split(/\b/)
   tweet.each_with_index do |word, i|
     dictionary.each do |v_long, v_short|
-      if word == v_long
+      if word == v_long || word == v_long.capitalize
         tweet[i] = v_short
       end
     end
