@@ -33,9 +33,9 @@ end
 
 def selective_tweet_shortener(tweet_array)
   tweet_array.map do |tweet|
-    if tweet.length < 140
+    if tweet.length <= 140
       tweet
-    elsif tweet.length > 140
+    else
       puts word_substituter(tweet)
     end
   end
